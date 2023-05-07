@@ -24,7 +24,7 @@ namespace ScreenColorPicker
 			InitializeComponent();
 		}
 
-		private Color GetPixelColor(int x, int y)
+		public static Color GetPixelColor(int x, int y)
 		{
 			IntPtr hdc = GetDC(IntPtr.Zero);
 			uint pixel = GetPixel(hdc, x, y);
